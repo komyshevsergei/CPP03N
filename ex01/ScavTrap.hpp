@@ -6,14 +6,14 @@
 /*   By: skomyshe <skomyshe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 18:48:12 by skomyshe          #+#    #+#             */
-/*   Updated: 2026/01/19 20:50:30 by skomyshe         ###   ########.fr       */
+/*   Updated: 2026/01/19 23:42:51 by skomyshe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
-#include "ClapTrap.hpp"
 
+#include "ClapTrap.hpp"
 #include <string>
 #include <iostream>
 
@@ -23,9 +23,9 @@ public:
     ScavTrap(const std::string &name);
     ScavTrap(const ScavTrap &other);
     ScavTrap &operator=(const ScavTrap &other);
-    virtual ~ScavTrap();
+    ~ScavTrap();
 
-    virtual void attack(const std::string &target);
+    void attack(const std::string &target);
     void guardGate();
 };
 
